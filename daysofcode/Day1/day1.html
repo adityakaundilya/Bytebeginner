@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day1</title>
+    <link rel="stylesheet" href="day1.css">
+</head>
+<body>
+    <section class="css">
+    <h1 id="day1">DAY1: Cascade,specifity and inheritence in CSS</h1>
+    <h2 id="bar"> Creating Navigation bar</h2>
+    
+    <header >
+        <h1 id="page-title" class="title">Wombat Coffee Roaster</h1>
+        <nav>
+            <ul id="main-nav" class="nav">
+                <li><a href="/">Home</a></li>
+                <li><a href="/coffees">Coffees</a></li>
+                <li><a href="/brewers">Brewers</a></li>
+                <li><a href="/specials" id="featured">Special</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    </section>
+    
+<section class="learning">
+    <ul>
+        <li><b>Learning 1:</b> Id selector wins over other selector. d.h Id ist am wichtigsten. her title 'Wombat Coffee Roster' has font family of sans-serif instead of serif or monospace</li>
+        <li><b>Learning 2:</b> The exact rule of specificity
+                <ol>
+                    <li>If a selector has more Ids, it wins(that is its more specific)</li>
+                    <li>If that result in a draw, the selector with the most classes wins</li>
+                    <li>If that result in a tie, the slector with most tag names wins</li> </ol>
+        </li>
+        <li><b>Learning 3:</b> if we use id tag #main-nav instead of class .nav to select 'a href' tag, then id #featured will not be implemented because #main-nav a have <u>1 id and 1 tag</u> (1.0.1 specificty)in comparision to <u>only 1 tag(1.0.0)</u></li>
+    </ul>
+</section>
+
+<section class="learning">
+    <h2>JAVASCRIPT</h2>
+    <p><b>Ques1. Strict and type converting</b></p>
+    <p> <b>Ans.</b> 
+            <ul>
+                <li>const a = "42"; </li>
+                <li>const b = 42; </li>
+                <li>console.log(a==b); //true </li>
+                <li>onsole.log(a===b); //false</li>
+            </ul><br>
+             
+        
+        <ul id="square">
+            <li> Strict comparison (===) checks for value equality without allowing coersion i.e strings=/= number</li>
+            <li>Abstract comparision (==) checks for value equality with coersion allowed i.e. strings=number</li>
+        </ul>
+    </p>
+</section>
+</body>
+</html>
