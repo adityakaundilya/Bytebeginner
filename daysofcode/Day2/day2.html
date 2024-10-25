@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day2</title>
+    <link rel="stylesheet" href="day2.css">
+</head>
+<body>
+    <section class="css">
+    <h1 id="day2">DAY2: Inherit,initial,unset and revert keyword & Relative units.</h1>
+    <div class="topic">
+        <h3>1.Adding em unit to padding</h3><br>
+        <span class="box box-small"> Small 12px </span>
+        <span class="box box-large"> Large 16px</span>
+        <p> Both span have same padding and padding radius of 1em but due to difference in font size
+            it automatically adjust padding to 12 px and 16 px respectively.
+        </p>
+        <h4>Let see what happen when we use 1.5em instead of 1 em</h4>
+        <span class="boxnew box-small"> Small 12px </span>
+        <span class="boxnew box-large"> Large 16px</span> 
+    <br></br>
+        <p>This time, you will notice pading has been incresed, 12*1.5 = 16px and 16*1.5= 24px respectively.</p>
+    </div>
+        
+    <div class="topic">
+        <h3>2. Adding relative unit to font size EM</h3>
+        <span id="em1">fontsize: 1em</span>
+        <span id="em1_2">fontsize: 1.2em</span>
+    </div>
+
+    <div class="topic">
+        <h3>3. what is rem</h3>
+        <p> basically root_em. we know about pseudo class :root which is sort of type selector for whole HTML</p>
+    </div>
+
+    <div class="topic">
+        <h3>4. @media queries</h3>
+        <p> in this page we have kept <br>
+            :root{font-size: 0.8} <br>
+            ----------------------- <br>
+            @media (min-width:800) { <br>
+                :root{ font-size: 1em} <br>
+            } <br>
+            <b> what it will do that, when screen size drop below 800px it will lower the FontSize to 0.8em</b>    
+        
+        </p>
+    </div>
+    </section>
+    
+<section class="learning">
+    <ul>
+        <li><b>Learning 1: </b>Inherit = This keyword inherit the values from parent.</li>
+        <li><b>Learning 2: </b>Initial = Every CSS property has an initial or default value. If you assign the value initial to that property then it effectivelyresets to its default value.</li>
+        <li><b>Learning 3: </b>unset = Combination of Inherit and initial. when applied to an iherited property it set the value to iherit,to non inherited propety to initial.</li>
+        <li><b>Learning 4: </b>revert = helps when working with new css features and you not know oof the top of your head what the default values are.</li>
+</section>
+
+<section class="learning">
+    <h2>JAVASCRIPT</h2>
+    <p><b>Ques. what is exponential or pover Operator(**)?</b></p>
+    <p> <b>Ans.</b>
+        <b>using exponential Operator</b> <br>
+        -------------------------------------------------- <br>
+        const result1= 2**3;// raised to the power 3 <br>
+        console.log(result1);// 8 <br>
+        -------------------------------------------------- <br>
+        const result2 = 4**8.5 //sqaure root of 4 <br>
+        console.log(result2); //131072 <br>
+        -------------------------------------------------- <br>
+        const result3 = 10**-2 //10 raised to the power -2 <br>
+        console-log(result3); //0.01            
+    </p>
+</section>
+</body>
+</html>

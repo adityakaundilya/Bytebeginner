@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day1</title>
+    <link rel="stylesheet" href="day.css">
+</head>
+<body>
+    <section class="css">
+    <h1 id="day1">DAY: </h1>
+    <h2 id="bar"> </h2>
+    </section>
+    
+<section class="learning">
+    <ul>
+        <li><b>Learning 1:</b> </li>
+        <li><b>Learning 2:</b> </li>
+        <li><b>Learning 3:</b> </li>
+</section>
+
+<section class="learning">
+    <h2>JAVASCRIPT</h2>
+    <p><b>Ques.</b></p>
+    <p> <b>Ans.</b> 
+            
+    </p>
+</section>
+</body>
+</html>
