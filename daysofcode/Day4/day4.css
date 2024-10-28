@@ -1,0 +1,32 @@
+.learning{
+    border: 2px solid black;
+    margin-bottom: 5px;
+    padding-left: 30px;
+}
+:root {
+    font-size: clamp(0.9rem, 0.6rem + 0.5svw, 1.7rem);    
+}
+.css{
+    border: 2px solid black;
+    margin-bottom: 5px;
+    padding-left: 30px;
+}
+
+h1{
+    color: #2f4f4f;
+    margin-bottom: 10px;
+}
+
+#page-title{
+    font-family: sans-serif;
+}
+
+.title{
+    font-family: monospace;
+}
+.learning li{
+    margin-top: 0;
+}
+#square{
+    list-style: square;
+}

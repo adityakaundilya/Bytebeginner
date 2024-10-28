@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day4</title>
+    <link rel="stylesheet" href="day4.css">
+</head>
+<body>
+    <section class="css">
+    <h1 id="day">DAY4: Getting resonsive with CALC(), CLAMP() Function</h1>
+        <h3>1. CALC() Function</h3>
+        <p>calc() function lets you do basic arithmetic with two or more values.i.e. + - * /.</p>
+        <p>For example CALC</p>
+        <p>:root { <br>
+            font-size: calc(0.5em + 1svw); <br>   
+        } <br>
+        The 0.5em here operates as sort of minimum font size, and the 1svw adds a responsive scaler. This gives you a base font size
+        from 11.75px on an iPhone Se up to 20 px 1200 px browser window.
+    </p>
+        <h3>2. CLAMP() Function</h3>
+        <p>CLAMP Takes three arguemnents: a minimum value, a preferred value as an expression, and maximum valze.</p>
+        <p>For example
+        <p> :root{ <br>
+            font-size: clamp(0.9rem, 0.6rem + 0.5svw, 1.7rem); <br>    
+         } <br>
+         This specifies a font size of 0.6rem +0.5svw, bt the clamp function ensures the final value smaller than 0.9rem and never larger than 1.7 rem.
+        </p>
+        <h3>3. Unitless numbers and line height</h3>
+        <h4>line-height, z-index and font weight (700 is equivalent to bold, 400 is equivalent to normal)</h4>
+        <p>When you use a unitless number, that declared value is inheritated, meaning its computed alue is recalculated for each inheriting child value.</p>
+        <h3>4. Variables</h3>
+        <p>To define a custom property, you declare it like any other CSS property</p>
+        <p>
+            :root{ <br>
+                --main-font: Helvetica, Arial, sans-serif; <br>
+            } <br>
+        </p>
+    
+    </section>
+        
+    
+<section class="learning">
+    <ul>
+        <li><b>Learning 1: Have a standard font-size like mentioned above.</b> </li>
+        <li><b>Learning 2: Variables must be declared inside a declaaration block, generally in :root selector</b> </li>
+</section>
+
+<section class="learning">
+    <h2>JAVASCRIPT</h2>
+    <p><b>Ques. what is JSON?</b></p>
+    <p> <b>Ans. JSON</b>
+        short for javascript object notation, is a lightweight data interchange formmat that is easy for human to read and write,
+        and easy for machines to parse and generate. It is often used for exchanging data between different parts of an application.
+        <b>JSON</b> is represented as key-value pair, where keys are strings and values can be strings, number, boolean, arrays or other JSON objects.
+        The basic syntax of a JSON object looks like this: <br>
+        {<br>
+            "key1":"value1", <br>
+            "key2":123, <br>
+            "key3":true, <br>
+            "key4":["item1","item2"], <br>
+            "key5":{ <br>
+                "nestedKey":"nestedValue" <br>
+            } <br>
+        }   <br>
+        <b>JSON</b> is widely used beccause of is simplicity,ease of use and compatibilty with varius programming languages. It is a common format for sending and recieving data in APIs, configuring and storing configuration settings.
+        
+    </p>
+</section>
+</body>
+</html>
