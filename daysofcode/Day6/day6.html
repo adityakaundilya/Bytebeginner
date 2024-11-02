@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day6</title>
+    <link rel="stylesheet" href="day6.css">
+</head>
+<body>
+    <section class="css">
+    <h1 id="day6">DAY6: Box Model</h1>
+    <h3>1.Centering content horizontally</h3>
+    <p>To begin laying out a page, it is best to do so from outside in. Get the larger conatiner element where you want them before moving on the smaller ones inside them.</p>
+    <h3>2.Box Model</h3>
+    <p>Box sizing: content box or border box</p>
+    <img src="box-models-compared.png" alt="" sizes="" srcset="" id="borderbox">
+    <h3>3. Using universal border box signing</h3>
+    <p>
+        *,::before , ::after{ <br>
+            box-sizing: border-box; <br>
+        } <br>
+    </p>
+    <h3>4.<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/overflow"> Overflow Properties</a></h3>
+    <p>
+        visible;  <br>
+        hidden;  <br>
+        clip; <br>
+        scroll; <br>
+        auto; 
+    </p>
+    
+    </section>
+
+<section class="learning">
+    <h2>JAVASCRIPT</h2>
+    <p><b>Ques. what are Mixins and how to achiev Multiple inheritence?</b></p>
+    <p> <b>Ans.</b> 
+            Mixins offer a solution by enabling code reuse and achieving a form of multiple inheritance. A mixin is a way to incoperate methods and properties from object into another. this enhances modularity and flexibility in code design. <br>
+            Mixins is a class that uses method from other object and no real inheritence relationship is established. <b>using Object.assign</b> <br>
+            Ex <br>
+            &emsp;   class Vehicle { <br>
+                &emsp;&emsp;        move() {    <br>
+                    &emsp;&emsp;&emsp;        alert('Moving now'); <br>
+                    &emsp;&emsp;    } <br>
+                } <br>
+                let infareredSensor = { <br>
+                    &emsp;    checkTemperature(){ <br>
+                        &emsp;&emsp;        alert('Checking Temperatue');       <br>              
+                        &emsp;    } <br>
+                } <br>
+                Object.assign(Vehicle.prototype, infareredSensor); <br>
+                myCar.move(); <br>
+                myCar.checkTemperature; <br>
+
+    </p>
+</section>
+</body>
+</html>
